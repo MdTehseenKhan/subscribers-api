@@ -30,8 +30,7 @@ router.post('/', async (req, res) => {
 	try {
 	  const data = await Subscriber.create({
 			name, 
-			channelSubscribed, 
-			dateSubscribed: Date.now()
+			channelSubscribed
     })
 		res.status(201).json({ data })
 	} catch ({ message }) {
@@ -47,7 +46,7 @@ router.patch('/:id', async (req, res) => {
 	  const data = await Subscriber.findByIdAndUpdate({
 			name, 
 			channelSubscribed, 
-			dateSubscribed: Date.now()
+			dateUpdated: Date.now()
     })
 		res.status(200).json({ data })
 	} catch ({ message }) {
