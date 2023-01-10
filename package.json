@@ -1,0 +1,18 @@
+{
+  "name": "subscribers-api",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "ISC",
+	"type": "module",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+	"dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
